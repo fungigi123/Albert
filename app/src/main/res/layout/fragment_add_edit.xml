@@ -1,0 +1,82 @@
+<FrameLayout
+   xmlns:android="http://schemas.android.com/apk/res/android"
+   android:layout_width="match_parent"
+   android:layout_height="match_parent">
+
+   <ScrollView
+      android:layout_width="match_parent"
+      android:layout_height="match_parent">
+
+      <LinearLayout
+         android:orientation="vertical"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content">
+
+         <android.support.design.widget.TextInputLayout
+             android:id="@+id/dateTextInputLayout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_name_required"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords|textPersonName" />
+         </android.support.design.widget.TextInputLayout>
+
+         <android.support.design.widget.TextInputLayout
+             android:id="@+id/timeTextInputLayout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_email"
+                android:imeOptions="actionNext"
+                android:inputType="phone" />
+         </android.support.design.widget.TextInputLayout>
+
+         <android.support.design.widget.TextInputLayout
+             android:id="@+id/doctorTextInputLayout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_phone"
+                android:imeOptions="actionNext"
+                android:inputType="textEmailAddress" />
+         </android.support.design.widget.TextInputLayout>
+
+         <android.support.design.widget.TextInputLayout
+             android:id="@+id/symptomTextInputLayout"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content">
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/hint_street"
+                android:imeOptions="actionNext"
+                android:inputType="textCapWords|textPostalAddress" />
+         </android.support.design.widget.TextInputLayout>
+
+      </LinearLayout>
+   </ScrollView>
+
+   <android.support.design.widget.FloatingActionButton
+      android:id="@+id/saveFloatingActionButton"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:layout_gravity="top|end"
+      android:layout_margin="@dimen/fab_margin"
+      android:src="@drawable/ic_save_24dp"/>
+
+</FrameLayout>
